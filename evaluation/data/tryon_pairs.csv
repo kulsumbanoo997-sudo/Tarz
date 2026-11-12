@@ -1,0 +1,11 @@
+pair_id,participant_id,garment_id,arms_pose,person_photo_path,raw_output_path,tarz_output_path,three_arm_artifact_raw,three_arm_artifact_tarz,person_mask_path
+pair_01,p_01,p06,crossed,backend/uploads/photo_b7453142e69a.jpg,evaluation/data/tryon/baseline/raw_01.png,evaluation/data/tryon/tarz/tarz_01.png,1,0,
+pair_02,p_01,p06,crossed,backend/uploads/photo_b7453142e69a.jpg,evaluation/data/tryon/baseline/raw_02.png,evaluation/data/tryon/tarz/tarz_02.png,1,0,
+pair_03,p_02,p02,waist_hand,backend/uploads/photo_f1f457eee83c.jpg,evaluation/data/tryon/baseline/raw_03.png,evaluation/data/tryon/tarz/tarz_03.png,1,0,
+pair_04,p_02,p10,relaxed,backend/uploads/photo_f1f457eee83c.jpg,evaluation/data/tryon/baseline/raw_04.png,evaluation/data/tryon/tarz/tarz_04.png,0,0,
+pair_05,p_03,p19,relaxed,backend/uploads/photo_72fbc5ff933c.jpg,evaluation/data/tryon/baseline/raw_05.png,evaluation/data/tryon/tarz/tarz_05.png,0,0,
+pair_06,p_03,p18,relaxed,backend/uploads/photo_72fbc5ff933c.jpg,evaluation/data/tryon/baseline/raw_06.png,evaluation/data/tryon/tarz/tarz_06.png,0,0,
+pair_07,p_01,p09,crossed,backend/uploads/photo_b7453142e69a.jpg,evaluation/data/tryon/baseline/raw_07.png,evaluation/data/tryon/tarz/tarz_07.png,1,0,
+pair_08,p_01,p09,crossed,backend/uploads/photo_b7453142e69a.jpg,evaluation/data/tryon/baseline/raw_08.png,evaluation/data/tryon/tarz/tarz_08.png,1,0,
+pair_09,p_01,p08,crossed,backend/uploads/photo_b7453142e69a.jpg,evaluation/data/tryon/baseline/raw_09.png,evaluation/data/tryon/tarz/tarz_09.png,1,0,
+pair_10,p_04,p06,straight,backend/uploads/test_straight_pose.jpg,evaluation/data/tryon/baseline/raw_10.png,evaluation/data/tryon/tarz/tarz_10.png,1,0,

@@ -1,0 +1,17 @@
+{
+  "gender": "Women",
+  "body_shape": "Pear",
+  "skin": {
+    "depth": "Fair",
+    "undertone": "cool"
+  },
+  "measurements": {
+    "bust": 86,
+    "waist": 68,
+    "hip": 100
+  },
+  "size": {
+    "recommended": "S",
+    "fit_confidence": 0.85
+  }
+}

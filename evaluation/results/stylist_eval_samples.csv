@@ -1,0 +1,11 @@
+case_id,garment_id,target_verdict,tarz_verdict,base_verdict,tarz_model,tarz_hallucinated,base_hallucinated,tarz_faithfulness,base_faithfulness
+case_stylist_01,p02,partly suitable,partly suitable,partly suitable,groq:openai/gpt-oss-120b,False,False,1.0,0.3333
+case_stylist_02,p06,partly suitable,partly suitable,partly suitable,groq:openai/gpt-oss-120b,False,False,1.0,0.25
+case_stylist_03,p09,unsuitable,unsuitable,partly suitable,groq:openai/gpt-oss-120b,False,True,1.0,0.75
+case_stylist_04,p08,partly suitable,partly suitable,,groq:openai/gpt-oss-120b,False,True,1.0,0.0
+case_stylist_05,p01,partly suitable,partly suitable,,groq:openai/gpt-oss-20b,False,True,1.0,0.0
+case_stylist_06,p02,unsuitable,unsuitable,partly suitable,groq:openai/gpt-oss-20b,False,True,1.0,0.5
+case_stylist_07,p12,partly suitable,partly suitable,partly suitable,groq:openai/gpt-oss-20b,False,False,1.0,1.0
+case_stylist_08,p18,partly suitable,partly suitable,,groq:openai/gpt-oss-20b,False,True,1.0,0.0
+case_stylist_09,p20,partly suitable,partly suitable,partly suitable,groq:openai/gpt-oss-20b,False,False,1.0,1.0
+case_stylist_10,p23,unsuitable,unsuitable,,groq:openai/gpt-oss-20b,False,True,1.0,0.0

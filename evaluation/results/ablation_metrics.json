@@ -1,0 +1,139 @@
+{
+  "status": "COMPLETED",
+  "score_term_ablation": {
+    "omit_size": {
+      "weight_set": {
+        "size": 0.0,
+        "shape": 0.28571428571428575,
+        "tone": 0.35714285714285715,
+        "style": 0.2142857142857143,
+        "occasion": 0.14285714285714288
+      },
+      "mean_top5_jaccard_similarity": 1.0,
+      "top5_rank_drift_pct": 0.0,
+      "delta_ndcg_at_5": "TBD"
+    },
+    "omit_shape": {
+      "weight_set": {
+        "size": 0.37499999999999994,
+        "shape": 0.0,
+        "tone": 0.3125,
+        "style": 0.18749999999999997,
+        "occasion": 0.125
+      },
+      "mean_top5_jaccard_similarity": 0.8,
+      "top5_rank_drift_pct": 20.0,
+      "delta_ndcg_at_5": "TBD"
+    },
+    "omit_tone": {
+      "weight_set": {
+        "size": 0.39999999999999997,
+        "shape": 0.26666666666666666,
+        "tone": 0.0,
+        "style": 0.19999999999999998,
+        "occasion": 0.13333333333333333
+      },
+      "mean_top5_jaccard_similarity": 0.1944,
+      "top5_rank_drift_pct": 80.56,
+      "delta_ndcg_at_5": "TBD"
+    },
+    "omit_style": {
+      "weight_set": {
+        "size": 0.35294117647058826,
+        "shape": 0.23529411764705885,
+        "tone": 0.29411764705882354,
+        "style": 0.0,
+        "occasion": 0.11764705882352942
+      },
+      "mean_top5_jaccard_similarity": 1.0,
+      "top5_rank_drift_pct": 0.0,
+      "delta_ndcg_at_5": "TBD"
+    },
+    "omit_occasion": {
+      "weight_set": {
+        "size": 0.3333333333333333,
+        "shape": 0.22222222222222224,
+        "tone": 0.2777777777777778,
+        "style": 0.16666666666666666,
+        "occasion": 0.0
+      },
+      "mean_top5_jaccard_similarity": 1.0,
+      "top5_rank_drift_pct": 0.0,
+      "delta_ndcg_at_5": "TBD"
+    }
+  },
+  "weight_sensitivity": {
+    "perturbation_range_pct": 20.0,
+    "mean_verdict_change_rate_pct": 0.0,
+    "min_verdict_change_rate_pct": 0.0,
+    "max_verdict_change_rate_pct": 0.0
+  },
+  "threshold_sensitivity": {
+    "suitable_0.65_partly_0.4": {
+      "verdict_change_from_canonical_pct": 0.0,
+      "suitable_share_pct": 17.0,
+      "partly_share_pct": 47.0,
+      "unsuitable_share_pct": 36.0
+    },
+    "suitable_0.65_partly_0.45": {
+      "verdict_change_from_canonical_pct": 0.0,
+      "suitable_share_pct": 17.0,
+      "partly_share_pct": 47.0,
+      "unsuitable_share_pct": 36.0
+    },
+    "suitable_0.65_partly_0.5": {
+      "verdict_change_from_canonical_pct": 31.0,
+      "suitable_share_pct": 17.0,
+      "partly_share_pct": 16.0,
+      "unsuitable_share_pct": 67.0
+    },
+    "suitable_0.7_partly_0.4": {
+      "verdict_change_from_canonical_pct": 0.0,
+      "suitable_share_pct": 17.0,
+      "partly_share_pct": 47.0,
+      "unsuitable_share_pct": 36.0
+    },
+    "suitable_0.7_partly_0.45": {
+      "verdict_change_from_canonical_pct": 0.0,
+      "suitable_share_pct": 17.0,
+      "partly_share_pct": 47.0,
+      "unsuitable_share_pct": 36.0
+    },
+    "suitable_0.7_partly_0.5": {
+      "verdict_change_from_canonical_pct": 31.0,
+      "suitable_share_pct": 17.0,
+      "partly_share_pct": 16.0,
+      "unsuitable_share_pct": 67.0
+    },
+    "suitable_0.75_partly_0.4": {
+      "verdict_change_from_canonical_pct": 17.0,
+      "suitable_share_pct": 0.0,
+      "partly_share_pct": 64.0,
+      "unsuitable_share_pct": 36.0
+    },
+    "suitable_0.75_partly_0.45": {
+      "verdict_change_from_canonical_pct": 17.0,
+      "suitable_share_pct": 0.0,
+      "partly_share_pct": 64.0,
+      "unsuitable_share_pct": 36.0
+    },
+    "suitable_0.75_partly_0.5": {
+      "verdict_change_from_canonical_pct": 48.0,
+      "suitable_share_pct": 0.0,
+      "partly_share_pct": 33.0,
+      "unsuitable_share_pct": 67.0
+    }
+  },
+  "failover_orchestration": {
+    "status": "COMPLETED",
+    "total_logged_tryons": 10,
+    "tier_distribution": {
+      "IDM-VTON (HF Space)": 10
+    },
+    "architecture_tiers": {
+      "Tier_1_Primary": "Authenticated Hugging Face ZeroGPU (IDM-VTON)",
+      "Tier_2_Failover": "Anonymous Hugging Face ZeroGPU (Quota Bypass)",
+      "Tier_3_Fallback": "Replicate Cloud API / Local Server Fallback"
+    }
+  }
+}

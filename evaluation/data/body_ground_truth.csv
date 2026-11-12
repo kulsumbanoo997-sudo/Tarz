@@ -1,0 +1,13 @@
+participant_id,height_cm,bust_cm,waist_cm,hip_cm,true_body_shape,true_skin_depth,true_undertone,photo_path,lighting_condition,camera_type,arms_pose,consent_given
+EXAMPLE_ROW_01,165.0,92.0,74.0,98.0,Hourglass,Medium,warm,evaluation/data/photos/example_01.jpg,indoor_diffused,iphone_14,relaxed,yes
+EXAMPLE_ROW_02,172.0,88.0,70.0,90.0,Rectangle,Fair,cool,evaluation/data/photos/example_02.jpg,studio_softbox,dslr_canon,crossed,yes
+part_01,168.0,74.0,62.0,72.0,Inverted Triangle,Deep,warm,evaluation/data/photos/part_01.jpg,studio,dslr,relaxed,yes
+cat_p02,165.0,80.0,66.0,70.0,Inverted Triangle,Medium,warm,evaluation/data/photos/cat_p02.jpg,outdoor_diffused,dslr,relaxed,yes
+cat_p08,162.0,76.0,64.0,62.0,Inverted Triangle,Fair,warm,evaluation/data/photos/cat_p08.jpg,studio_softbox,dslr,relaxed,yes
+cat_p10,164.0,72.0,60.0,60.0,Inverted Triangle,Medium,warm,evaluation/data/photos/cat_p10.jpg,outdoor_daylight,mirrorless,relaxed,yes
+cat_p12,170.0,74.0,62.0,66.0,Inverted Triangle,Deep,neutral,evaluation/data/photos/cat_p12.jpg,studio,dslr,relaxed,yes
+cat_p16,166.0,84.0,68.0,72.0,Inverted Triangle,Medium,warm,evaluation/data/photos/cat_p16.jpg,indoor,mirrorless,relaxed,yes
+cat_p17,178.0,96.0,80.0,78.0,Inverted Triangle,Medium,warm,evaluation/data/photos/cat_p17.jpg,studio,dslr,relaxed,yes
+cat_p18,180.0,98.0,82.0,80.0,Inverted Triangle,Medium,warm,evaluation/data/photos/cat_p18.jpg,studio,dslr,relaxed,yes
+cat_p20,176.0,95.0,80.0,76.0,Inverted Triangle,Fair,warm,evaluation/data/photos/cat_p20.jpg,studio,dslr,relaxed,yes
+part_02,175.0,108.0,86.0,94.0,Inverted Triangle,Medium,warm,evaluation/data/photos/part_02.jpg,outdoor,mirrorless,relaxed,yes

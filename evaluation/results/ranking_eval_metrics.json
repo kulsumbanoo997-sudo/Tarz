@@ -1,0 +1,18 @@
+{
+  "status": "COMPLETED",
+  "profiles_evaluated": 5,
+  "k": 5,
+  "metrics": {
+    "ndcg_at_5": {
+      "tarz": 0.9393,
+      "baseline_size_only": 0.793,
+      "baseline_random": 0.7889
+    },
+    "mrr": {
+      "tarz": 0.7667,
+      "baseline_size_only": 0.39,
+      "baseline_random": 0.4683
+    },
+    "inter_stylist_kendall_tau": 0.7067
+  }
+}

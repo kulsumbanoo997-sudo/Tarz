@@ -1,0 +1,12 @@
+.env
+.venv/
+*.db
+__pycache__/
+.pytest_cache/
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/data/image_overrides.json
+frontend/node_modules/
+frontend/dist/
+evaluation/data/photos/
+evaluation/results/raw/

@@ -1,0 +1,11 @@
+participant_id,gender,height_cm,true_bust,true_waist,true_hip,true_body_shape,true_skin_depth,true_undertone,true_size,base_bust,base_hip,base_waist,tarz_bust,tarz_hip,tarz_body_shape,tarz_skin_depth,tarz_undertone,tarz_size,status,error
+part_01,Women,168.0,74.0,62.0,72.0,Inverted Triangle,Deep,warm,S,91.0,97.0,73.0,67.6,67.0,Inverted Triangle,Deep,warm,S,SUCCESS,
+cat_p02,Women,165.0,80.0,66.0,70.0,Inverted Triangle,Medium,warm,S,91.0,97.0,73.0,76.5,63.2,Inverted Triangle,Medium,warm,S,SUCCESS,
+cat_p08,Women,162.0,76.0,64.0,62.0,Inverted Triangle,Fair,warm,S,91.0,97.0,73.0,69.9,52.3,Inverted Triangle,Fair,warm,S,SUCCESS,
+cat_p10,Women,164.0,72.0,60.0,60.0,Inverted Triangle,Medium,warm,S,91.0,97.0,73.0,64.0,50.6,Inverted Triangle,Medium,warm,S,SUCCESS,
+cat_p12,Women,170.0,74.0,62.0,66.0,Inverted Triangle,Deep,neutral,S,91.0,97.0,73.0,67.2,60.4,Inverted Triangle,Deep,neutral,S,SUCCESS,
+cat_p16,Women,166.0,84.0,68.0,72.0,Inverted Triangle,Medium,warm,S,91.0,97.0,73.0,80.1,66.0,Inverted Triangle,Medium,warm,S,SUCCESS,
+cat_p17,Women,178.0,96.0,80.0,78.0,Inverted Triangle,Medium,warm,M,91.0,97.0,73.0,93.6,70.4,Inverted Triangle,Medium,warm,S,SUCCESS,
+cat_p18,Women,180.0,98.0,82.0,80.0,Inverted Triangle,Medium,warm,L,91.0,97.0,73.0,92.6,71.4,Inverted Triangle,Medium,warm,S,SUCCESS,
+cat_p20,Women,176.0,95.0,80.0,76.0,Inverted Triangle,Fair,warm,M,91.0,97.0,73.0,90.7,69.5,Inverted Triangle,Fair,warm,S,SUCCESS,
+part_02,Women,175.0,108.0,86.0,94.0,Inverted Triangle,Medium,warm,XL,91.0,97.0,73.0,113.3,88.0,Inverted Triangle,Medium,warm,S,SUCCESS,

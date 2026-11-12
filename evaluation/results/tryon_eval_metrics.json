@@ -1,0 +1,22 @@
+{
+  "status": "COMPLETED",
+  "sample_count": 10,
+  "metrics": {
+    "fid": {
+      "tarz": 261.88,
+      "baseline_raw": 266.71
+    },
+    "lpips": {
+      "tarz": 0.2766,
+      "baseline_raw": 0.2746
+    },
+    "ssim_unmasked": {
+      "tarz": 0.8384,
+      "baseline_raw": 0.8413
+    },
+    "three_arm_artifact_rate_pct": {
+      "tarz": 0.0,
+      "baseline_raw": 70.0
+    }
+  }
+}

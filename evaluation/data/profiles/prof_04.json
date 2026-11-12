@@ -1,0 +1,17 @@
+{
+  "gender": "Men",
+  "body_shape": "Inverted Triangle",
+  "skin": {
+    "depth": "Medium",
+    "undertone": "cool"
+  },
+  "measurements": {
+    "bust": 104,
+    "waist": 82,
+    "hip": 96
+  },
+  "size": {
+    "recommended": "L",
+    "fit_confidence": 0.95
+  }
+}

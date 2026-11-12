@@ -1,0 +1,46 @@
+{
+  "status": "COMPLETED",
+  "sample_count": 10,
+  "baseline_mode": "population_mean",
+  "metrics": {
+    "circumference_mae_cm": {
+      "tarz": 6.17,
+      "baseline": 17.95,
+      "details": {
+        "bust_mae": 5.21,
+        "hip_mae": 7.12,
+        "waist_note": "Waist is intentionally not estimated from 2D monocular photos."
+      }
+    },
+    "shape_accuracy_pct": {
+      "tarz": 100.0,
+      "baseline": 20.0
+    },
+    "skin_depth_accuracy_pct": {
+      "tarz": 100.0,
+      "baseline": 33.33
+    },
+    "skin_undertone_accuracy_pct": {
+      "tarz": 100.0,
+      "baseline": 33.33
+    },
+    "size_agreement_rate_pct": {
+      "tarz": 60.0,
+      "baseline": 20.0
+    },
+    "per_skin_depth_breakdown": {
+      "Fair": {
+        "count": 2,
+        "accuracy_pct": 100.0
+      },
+      "Medium": {
+        "count": 6,
+        "accuracy_pct": 100.0
+      },
+      "Deep": {
+        "count": 2,
+        "accuracy_pct": 100.0
+      }
+    }
+  }
+}

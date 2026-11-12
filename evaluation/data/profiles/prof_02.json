@@ -1,0 +1,17 @@
+{
+  "gender": "Women",
+  "body_shape": "Apple",
+  "skin": {
+    "depth": "Deep",
+    "undertone": "warm"
+  },
+  "measurements": {
+    "bust": 102,
+    "waist": 90,
+    "hip": 96
+  },
+  "size": {
+    "recommended": "L",
+    "fit_confidence": 0.85
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "gender": "Women",
+  "body_shape": "Hourglass",
+  "skin": {
+    "depth": "Medium",
+    "undertone": "warm"
+  },
+  "measurements": {
+    "bust": 92,
+    "waist": 72,
+    "hip": 98
+  },
+  "size": {
+    "recommended": "M",
+    "fit_confidence": 1.0
+  }
+}

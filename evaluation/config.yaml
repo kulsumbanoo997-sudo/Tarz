@@ -1,0 +1,50 @@
+# Evaluation Configuration for TARZ IEEE Research Paper
+# All paths are relative to workspace root (d:\tarz-ai-fashion)
+
+api:
+  base_url: "http://127.0.0.1:8000"
+  timeout_seconds: 60
+  tryon_timeout_seconds: 180
+  retries: 3
+  backoff_factor: 1.5
+
+paths:
+  body_gt_csv: "evaluation/data/body_ground_truth.csv"
+  tryon_pairs_csv: "evaluation/data/tryon_pairs.csv"
+  ranking_gt_csv: "evaluation/data/ranking_gt.csv"
+  stylist_testset_csv: "evaluation/data/stylist_testset.csv"
+  results_dir: "evaluation/results"
+  raw_dir: "evaluation/results/raw"
+  table4_csv: "evaluation/results/table4.csv"
+  table4_md: "evaluation/results/table4.md"
+
+reproducibility:
+  seed: 42
+  bootstrap_iterations: 1000
+  bootstrap_ci: 0.95
+
+rq1_body:
+  # Baseline for circumference prediction:
+  # "population_mean" (midpoint of gender size charts) or "stature_linear"
+  baseline_mode: "population_mean"
+
+rq2_tryon:
+  fid_batch_size: 16
+  lpips_net: "alex" # alex or vgg
+  unmasked_ssim_erode_kernel: 5
+  compute_device: "cpu" # "cuda" or "cpu"
+
+rq3_ranking:
+  k: 5
+  random_baseline_trials: 100
+
+rq4_stylist:
+  unconstrained_prompt_model: "openai/gpt-oss-120b"
+  max_retries: 3
+
+ablation:
+  weight_perturbation_pct: 0.20
+  threshold_variations:
+    suitable: [0.65, 0.70, 0.75]
+    partly: [0.40, 0.45, 0.50]
+

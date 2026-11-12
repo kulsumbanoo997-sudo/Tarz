@@ -1,0 +1,15 @@
+{
+  "status": "COMPLETED",
+  "total_cases_evaluated": 10,
+  "metrics": {
+    "hallucination_rate_pct": {
+      "tarz": 0.0,
+      "baseline_unconstrained": 60.0
+    },
+    "faithfulness_score": {
+      "tarz": 1.0,
+      "baseline_unconstrained": 0.3833
+    },
+    "template_fallback_share_pct": 0.0
+  }
+}

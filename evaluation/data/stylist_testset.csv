@@ -1,0 +1,11 @@
+case_id,profile_json_path,garment_id,is_deliberately_unsuitable
+case_stylist_01,evaluation/data/profiles/prof_01.json,p02,0
+case_stylist_02,evaluation/data/profiles/prof_01.json,p06,0
+case_stylist_03,evaluation/data/profiles/prof_02.json,p09,1
+case_stylist_04,evaluation/data/profiles/prof_02.json,p08,0
+case_stylist_05,evaluation/data/profiles/prof_03.json,p01,0
+case_stylist_06,evaluation/data/profiles/prof_03.json,p02,1
+case_stylist_07,evaluation/data/profiles/prof_03.json,p12,1
+case_stylist_08,evaluation/data/profiles/prof_04.json,p18,0
+case_stylist_09,evaluation/data/profiles/prof_04.json,p20,0
+case_stylist_10,evaluation/data/profiles/prof_04.json,p23,1

@@ -1,4 +1,4 @@
-export const API = (import.meta.env.VITE_API_URL || "http://localhost:8000").replace(/\/$/, "");
+export const API = "";
 export const img = (u) => (!u ? "" : u.startsWith("http") ? u : API + u);
 
 async function handle(r) {

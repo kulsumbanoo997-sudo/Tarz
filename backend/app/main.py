@@ -2,15 +2,12 @@ import os
 from typing import Optional
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
-from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from . import body_agent, catalog, config, db, scoring, storage, stylist, tryon
 
 app = FastAPI(title="TARZ API", version="1.0")
-app.add_middleware(CORSMiddleware, allow_origins=[config.FRONTEND_ORIGIN, "http://localhost:5173", "http://127.0.0.1:5173"],
-                   allow_methods=["*"], allow_headers=["*"])
 app.mount("/uploads", StaticFiles(directory=config.UPLOAD_DIR), name="uploads")
 db.init()
 

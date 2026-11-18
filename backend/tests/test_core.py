@@ -88,6 +88,11 @@ def test_api_validation():
     assert client.post("/api/analyze", data={"gender": "Women", "bust_cm": 10, "hip_cm": 90}).status_code == 422
 
 
+def test_api_does_not_enable_cors():
+    r = client.get("/api/health", headers={"Origin": "https://tarz-seven.vercel.app"})
+    assert "access-control-allow-origin" not in r.headers
+
+
 def test_photo_without_person_is_rejected():
     buf = io.BytesIO()
     Image.fromarray(np.full((480, 360, 3), 235, np.uint8)).save(buf, "JPEG")

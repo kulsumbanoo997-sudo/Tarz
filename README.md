@@ -392,7 +392,7 @@ tarz-ai-fashion/
     ├── vite.config.js                  # Vite configuration
     ├── index.html                      # Single-page application root
     ├── .env.example                    # Frontend environment template
-    ├── .env                            # VITE_API_URL specification
+    ├── .env                            # Local Vite proxy target (TARZ_BACKEND_URL)
     │
     └── src/
         ├── main.jsx                    # React entrypoint
@@ -448,7 +448,6 @@ HF_TOKEN=hf_your_huggingface_token_here
 REPLICATE_API_TOKEN=
 PEXELS_API_KEY=
 CLOUDINARY_URL=
-FRONTEND_ORIGIN=http://localhost:5173
 ```
 
 #### Launch Backend Server
@@ -464,8 +463,8 @@ Open a second terminal window:
 # 1. Navigate to frontend directory
 cd frontend
 
-# 2. Configure frontend environment
-echo VITE_API_URL=http://localhost:8000 > .env
+# 2. Configure the local Vite proxy target (optional; defaults to localhost:8000)
+echo TARZ_BACKEND_URL=http://localhost:8000 > .env
 
 # 3. Install NPM packages
 npm install
@@ -473,7 +472,7 @@ npm install
 # 4. Start local development server
 npm run dev
 ```
-*Access the user interface at `http://localhost:5173`.*
+*Access the user interface at `http://localhost:5173`. Vite proxies `/api` and `/uploads` to the backend, so browser requests stay same-origin. Vercel uses `frontend/vercel.json` to proxy those paths to the Render API.*
 
 ### 7.4 Running Test Suite
 Execute the integration test suite (runs 100% locally with zero external network overhead):

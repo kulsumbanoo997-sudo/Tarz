@@ -19,14 +19,27 @@ export default function App() {
   const [product, setProduct] = useState(null);
   const [cfg, setCfg] = useState(null);
   const [cfgErr, setCfgErr] = useState("");
+  const [cfgLoading, setCfgLoading] = useState(true);
+  const [cfgRetry, setCfgRetry] = useState(0);
 
-  useEffect(() => { getConfig().then(setCfg).catch(() => setCfgErr("Cannot reach the TARZ API. Start the backend (see README).")); }, []);
+  useEffect(() => {
+    let active = true;
+    setCfgLoading(true);
+    setCfgErr("");
+    getConfig()
+      .then((result) => { if (active) setCfg(result); })
+      .catch(() => {
+        if (active) setCfgErr("Could not reach the backend. The free service may still be waking up.");
+      })
+      .finally(() => { if (active) setCfgLoading(false); });
+    return () => { active = false; };
+  }, [cfgRetry]);
   useEffect(() => { localStorage.setItem(KEY, JSON.stringify({ profileId, profile, hasPhoto, prefs })); }, [profileId, profile, hasPhoto, prefs]);
 
   const go = (s, p) => { if (p) setProduct(p); setScreen(s); window.scrollTo(0, 0); };
   const onProfile = (r, p) => { setProfileId(r.profile_id); setProfile(r.profile); setHasPhoto(r.has_photo); setPrefs(p); go("catalog"); };
   const reset = () => { setProfileId(null); setProfile(null); setHasPhoto(false); setProduct(null); go("landing"); };
-  const ctx = { go, profileId, profile, hasPhoto, prefs, setPrefs, product, cfg, reset, onProfile };
+  const ctx = { go, profileId, profile, hasPhoto, prefs, setPrefs, product, cfg, reset, onProfile, apiReady: !!cfg, apiConnecting: cfgLoading };
 
   return (
     <div className="app">
@@ -36,7 +49,8 @@ export default function App() {
           <button key={k} className={screen === k ? "on" : ""} onClick={() => go(k)}
             disabled={k !== "landing" && k !== "analyze" && !profileId}>{l}</button>))}</nav>
       </header>
-      {cfgErr && <div className="banner err">{cfgErr}</div>}
+      {cfgLoading && <p className="hint" role="status">Connecting to the free backend. It may take up to a minute to wake.</p>}
+      {cfgErr && <div className="banner err" role="alert">{cfgErr} <button className="link" onClick={() => setCfgRetry((n) => n + 1)}>Retry connection</button></div>}
       <main>
         {screen === "landing" && <Landing {...ctx} />}
         {screen === "analyze" && <Analyze {...ctx} />}

@@ -474,6 +474,8 @@ npm run dev
 ```
 *Access the user interface at `http://localhost:5173`. Vite proxies `/api` and `/uploads` to the backend, so browser requests stay same-origin. Vercel uses `frontend/vercel.json` to proxy those paths to the Render API.*
 
+*Render's free service may take up to a minute to wake after inactivity. The frontend retries temporary connection failures and provides a retry action if the backend remains unavailable.*
+
 ### 7.4 Running Test Suite
 Execute the integration test suite (runs 100% locally with zero external network overhead):
 ```bash

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { analyze } from "../api.js";
 
-export default function Analyze({ cfg, prefs, onProfile }) {
+export default function Analyze({ cfg, prefs, onProfile, apiReady, apiConnecting }) {
   const [mode, setMode] = useState("photo");
   const [gender, setGender] = useState("Women");
   const [f, setF] = useState({ height: "", bust: "", waist: "", hip: "", shape: "", undertone: "", depth: "" });
@@ -65,7 +65,9 @@ export default function Analyze({ cfg, prefs, onProfile }) {
       <div className="chips">{(cfg?.styles || []).map((s) => <button key={s} className={p.styles.includes(s) ? "chip on" : "chip"} onClick={() => toggle(s)}>{s}</button>)}</div>
       <label>Occasion<select value={p.occasion} onChange={(e) => setP({ ...p, occasion: e.target.value })}><option value="">Any</option>{(cfg?.occasions || []).map((o) => <option key={o}>{o}</option>)}</select></label>
       {err && <div className="banner err">{err}</div>}
-      <button className="primary" disabled={busy} onClick={submit}>{busy ? "Analysing…" : "Analyze my profile"}</button>
+      <button className="primary" disabled={busy || !apiReady} onClick={submit}>
+        {busy ? "Analysing…" : apiReady ? "Analyze my profile" : apiConnecting ? "Connecting to backend…" : "Backend unavailable"}
+      </button>
     </section>
   );
 }
